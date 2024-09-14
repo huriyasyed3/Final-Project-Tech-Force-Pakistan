@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desi Delight</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-content">
+      <h1>Welcome to Desi Delight</h1>
+      <p>Savor the True Flavors of Pakistan</p>
+      <a href="#menu" class="cta-button">Explore Our Menu</a>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <p>Explore the authentic flavors of Pakistan, from biryani to nihari.</p>
+  
+    <!-- Slider Container -->
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="biryani1.jpg" alt="Biryani">
+          <h3>Biryani</h3>
+          <p>Spiced rice with marinated meat, bursting with flavors.</p>
+        </div>
+        <div class="slide">
+          <img src="nihari1.jpg" alt="Nihari">
+          <h3>Nihari</h3>
+          <p>A slow-cooked stew of meat, bursting with rich flavors.</p>
+        </div>
+        <div class="slide">
+          <img src="chicken karahi.jpg" alt="Chicken Karahi">
+          <h3>Chicken Karahi</h3>
+          <p>A traditional spicy and aromatic chicken dish cooked in a wok.</p>
+        </div>
+        <div class="slide">
+          <img src="kabab1.jpg" alt="Kebabs">
+          <h3>Kebabs</h3>
+          <p>Grilled meat skewers, seasoned with spices and herbs.</p>
+        </div>
+        <div class="slide">
+          <img src="halwa puri.jpg" alt="Halwa Puri">
+          <h3>Halwa Puri</h3>
+          <p>Deep-fried bread served with semolina pudding and chickpea curry.</p>
+        </div>
+      </div>
+      <!-- Slider Controls -->
+      <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlides(1)">&#10095;</a>
+    </div>
+  
+    <div class="grid-menu">
+      <!-- Menu Items with Images -->
+      <div class="menu-item">
+        <img src="gola kabab.jpg" alt="Gola Kabab">
+        <h3>Gola Kabab</h3>
+        <p>Juicy grilled kebabs made with minced meat and spices.</p>
+      </div>
+      <div class="menu-item">
+        <img src="seekh kabab.jpg" alt="Seekh Kabab">
+        <h3>Seekh Kabab</h3>
+        <p>Grilled minced meat with herbs and spices.</p>
+      </div>
+      <div class="menu-item">
+        <img src="palak gosht1.jpg" alt="Palak Gosht">
+        <h3>Palak Gosht</h3>
+        <p>Meat cooked with spinach, garlic, and rich spices.</p>
+      </div>
+      <div class="menu-item">
+        <img src="samosa.jpg" alt="Samosa">
+        <h3>Samosa</h3>
+        <p>Flaky pastry stuffed with spiced potatoes and peas.</p>
+      </div>
+      <!-- Add more items here -->
+    </div>
+  </section>
+  
+  <!-- About Us Section -->
+<section id="about-us">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Welcome to <span>Desi Delight</span>! We take pride in bringing the rich flavors of Pakistani cuisine to your table. Our menu is filled with traditional recipes that have been passed down for generations. From <span>spicy curries</span> to <span>savory kebabs</span>, each dish is prepared with love and the finest ingredients.
+          </p>
+          <p>
+            Whether you're craving a hearty <span>Biryani</span> or a warm, comforting <span>Halwa Puri</span>, our goal is to provide an unforgettable dining experience that honors the essence of desi cooking.
+          </p>
+        </div>
+        <div class="about-images">
+          <img src="about-biryani.jpg" alt="Biryani" class="food-img">
+          <img src="halwapuri.jpg" alt="Halwa Puri" class="food-img">
+          <img src="kabab2.jpg" alt="Kebabs" class="food-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Us Section -->
+<section id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Reach out to us for inquiries, suggestions, or feedback.</p>
+  
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form id="contactForm" action="#" method="POST">
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+  
+          <!-- Message Field -->
+          <div class="form-group">
+            <label for="message"><i class="fas fa-comment-alt"></i> Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+          </div>
+  
+          <!-- Submit Button -->
+          <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+  
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>Our team is here to help. You can reach us at:</p>
+        <p><i class="fas fa-phone-alt"></i> +92 300 1234567</p>
+        <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+        <div class="contact-icons">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

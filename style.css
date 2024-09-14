@@ -1,0 +1,643 @@
+
+ /* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, p {
+    margin: 0;
+  }
+  
+  /* Navbar Styling */
+  #navbar {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navbar ul li {
+    margin: 0 15px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #e67e22;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section Styling */
+  #hero {
+    height: 100vh;
+    background-image: url('hero.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+  }
+  
+  .hero-content {
+    background-image: repeating-linear-gradient(rgb(204, 233, 204),rgb(252, 174, 174),rgb(238, 238, 149));
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.9;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color:black;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color:black;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #d35400;
+  }
+  
+  /* Sections Styling */
+  section {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #menu {
+    background-color:rgb(240, 183, 162);
+  }
+  
+  #about, #contact {
+    background-color: #fff;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Fixing hero section visibility under navbar */
+  #hero {
+    padding-top: 60px;
+  }
+  
+  /* Menu Section */
+#menu {
+   background-color:rgb(250, 178, 154);
+  padding: 100px 20px;
+  text-align: center;
+
+}
+
+#menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#menu p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-color: white;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  transition: 0.5s;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Slider Controls */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+
+/* Animation */
+@keyframes slide-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.slide {
+  animation: slide-fade 1s ease;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .grid-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider img {
+    width: 100%;
+  }
+}
+ 
+/* Menu Section  */
+
+/* Adjusting #menu background */
+#menu {
+    background-color: #ffeee0; /* A warm background color */
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url('menu-background.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  #menu p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  /* Slider */
+  .slider-container {
+    position: relative;
+    max-width: 80%; /* Adjust to make the slider smaller */
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(250, 213, 178);
+    border-radius: 15px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow */
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    transition: 0.5s;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 400px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Slider Controls */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Grid Menu */
+  .grid-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .menu-item {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .menu-item img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .menu-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .menu-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .grid-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .slider img {
+      height: auto; /* Adjust for smaller screens */
+    }
+  }
+
+  /* About Us Section */
+#about-us {
+    background-color:rgb(248, 205, 189); 
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #about-us h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  .about-text span {
+    color: #ff5722;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .about-text span:hover {
+    color: #ff8c00;
+  }
+  
+  .about-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .food-img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .food-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Floating Animation */
+  #about-us::before, #about-us::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 87, 34, 0.4);
+    border-radius: 50%;
+    z-index: -1;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  #about-us::before {
+    top: -50px;
+    left: -50px;
+  }
+  
+  #about-us::after {
+    bottom: -50px;
+    right: -50px;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Text and Image Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .food-img {
+      width: 80%;
+      height: auto;
+    }
+  }
+
+ /* Contact Us Section */
+#contact {
+    background: linear-gradient(135deg, #f1f1f1, #f1a776); 
+    padding: 80px 20px;
+    text-align: center;
+    color: #333; 
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #444; 
+    position: relative;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  #contact p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+    animation: slideIn 1.5s ease;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+
+    background-image: url(front.jpg);
+    opacity: 0.9;
+    padding: 40px; /* Slightly larger padding for a cleaner look */
+    border-radius: 15px; /* Rounder corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    display: inline-block;
+    max-width: 650px; /* Increased width for a spacious feel */
+    width: 100%;
+    text-align: left;
+    animation: bounceIn 1.5s ease; /* New animation for the form */
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px; /* Slightly larger margin for spacing */
+    color:black;
+    font-weight: bold; /* Bold labels for clarity */
+    background-color: rgb(247, 153, 31);
+    border-radius: 50%;
+    display: inline;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 15px; /* Larger input padding */
+    border-radius: 10px; /* Rounder inputs */
+    border: 2px solid #ddd; /* More prominent border */
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #fc9825; /* Blue highlight for focus */
+  }
+  
+  .btn-submit {
+    background-color: #fcca25; /* Brighter button color */
+    color: #fff;
+    padding: 15px 30px; /* Larger button for visibility */
+    border: none;
+    border-radius: 25px; /* Very round button */
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added hover animation */
+  }
+  
+  .btn-submit:hover {
+    background-color: #f76e38;
+    transform: scale(1.05); /* Button enlarges slightly on hover */
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    margin-top: 60px;
+  }
+  
+  .contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black; /* Blue for section heading */
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-icons {
+    margin-top: 30px;
+  }
+  
+  .contact-icons a {
+    margin-right: 20px;
+    font-size: 2.5rem;
+    color:black; 
+    transition: color 0.3s ease, transform 0.2s ease; /* Icon hover animation */
+  }
+  
+  .contact-icons a:hover {
+    color:orangered; /* New color on hover */
+    transform: scale(1.1); /* Icons enlarge slightly on hover */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    60% {
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .contact-form {
+      max-width: 90%;
+      padding: 30px; /* Reduce padding for mobile */
+    }
+    
+    .btn-submit {
+      font-size: 1.1rem;
+      padding: 12px 20px;
+    }
+  
+    .contact-icons a {
+      font-size: 2rem;
+    }
+  }
+  
+  
